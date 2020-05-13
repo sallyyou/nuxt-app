@@ -22,13 +22,15 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: ["~/assets/styles/main.css"]
+  ,
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [{
+    src: '~/plugins/vuex-persist',
+    mode: 'client'
+  }],
   /*
   ** Nuxt.js dev-modules
   */
@@ -46,7 +48,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   }
 }
